@@ -1,0 +1,4 @@
+# Consumer Lambda dependencies
+# Note: boto3 is provided by the Lambda runtime - do not bundle it.
+# psycopg2-binary needs to be in the deployment package or a Lambda layer.
+psycopg2-binary==2.9.9

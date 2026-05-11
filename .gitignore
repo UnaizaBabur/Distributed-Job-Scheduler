@@ -1,0 +1,86 @@
+# ============================================================
+# Distributed Job Scheduler — .gitignore
+# ============================================================
+
+# ----------------------------
+# SECRETS — NEVER PUSH THESE
+# ----------------------------
+env.sh
+.env
+.env.*
+!.env.example
+setup_output.txt
+response.json
+
+# ----------------------------
+# BUILD ARTIFACTS (50MB+ — do not push)
+# ----------------------------
+build/
+dist/
+*.zip
+
+# ----------------------------
+# Python compiled / cache
+# ----------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# ----------------------------
+# Compiled C extensions / binaries
+# ----------------------------
+*.so
+*.dll
+*.dylib
+
+# ----------------------------
+# Python packaging / eggs
+# ----------------------------
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+MANIFEST
+
+# ----------------------------
+# Virtual environments
+# ----------------------------
+venv/
+.venv/
+env/
+ENV/
+.Python
+
+# ----------------------------
+# Logs & temporary files
+# ----------------------------
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ----------------------------
+# OS-generated junk
+# ----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ----------------------------
+# IDE / editor files
+# ----------------------------
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# ----------------------------
+# Pytest / coverage
+# ----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
